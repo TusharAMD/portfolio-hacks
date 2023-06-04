@@ -1,0 +1,99 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+body{
+  background: rgb(124,85,253);
+  background: radial-gradient(circle, rgba(124,85,253,1) 0%, rgba(105,255,188,1) 100%);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.resume-container {
+  width: 21cm; /* A4 width */
+  height: 29.7cm; /* A4 height */
+  background-color: #ffffff;
+
+  box-sizing: border-box;
+  display: flex;
+  font-family: 'Poppins';
+}
+.content-addition{
+  max-width: fit-content;
+}
+.parent{
+  display: flex;
+  border: 1px solid black;
+  flex-direction: row;
+}
+
+
+.contentform{
+  text-align: left;
+  margin:5px;
+}
+
+.left-hand-side{
+  padding: 10px;
+  padding-top: 50px;
+  width: 7cm;
+  background-color: #1F3041;
+  text-align: left;
+}
+
+.right-hand-side{
+  padding: 10px;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 8px;
+}
